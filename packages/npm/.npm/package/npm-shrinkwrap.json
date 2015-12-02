@@ -1,30 +1,43 @@
 {
   "dependencies": {
-    "socket.io-client": {
-      "version": "1.3.5",
+    "kurento-client": {
+      "version": "https://github.com/tmeasday/kurento-client-js/tarball/33e3b60f48b376a514add9266192294ec9fef101",
       "dependencies": {
-        "debug": {
-          "version": "0.7.4"
+        "async": {
+          "version": "0.9.2"
         },
-        "engine.io-client": {
-          "version": "1.5.1",
+        "checktype": {
+          "version": "0.0.6"
+        },
+        "es6-promise": {
+          "version": "2.1.1"
+        },
+        "extend": {
+          "version": "2.0.1"
+        },
+        "inherits": {
+          "version": "2.0.1"
+        },
+        "kurento-client-core": {
+          "version": "https://github.com/Kurento/kurento-client-core-js/tarball/release-5.1"
+        },
+        "kurento-client-elements": {
+          "version": "https://github.com/Kurento/kurento-client-elements-js/tarball/release-5.1"
+        },
+        "kurento-client-filters": {
+          "version": "https://github.com/Kurento/kurento-client-filters-js/tarball/release-5.1"
+        },
+        "kurento-jsonrpc": {
+          "version": "5.0.4",
           "dependencies": {
-            "has-cors": {
-              "version": "1.0.3",
-              "dependencies": {
-                "global": {
-                  "version": "https://github.com/component/global/archive/v2.0.1.tar.gz"
-                }
-              }
-            },
             "ws": {
-              "version": "0.4.31",
+              "version": "0.4.32",
               "dependencies": {
                 "commander": {
-                  "version": "0.6.1"
+                  "version": "2.1.0"
                 },
                 "nan": {
-                  "version": "0.3.2"
+                  "version": "1.0.0"
                 },
                 "tinycolor": {
                   "version": "0.0.1"
@@ -33,142 +46,52 @@
                   "version": "0.0.6"
                 }
               }
-            },
-            "xmlhttprequest": {
-              "version": "https://github.com/rase-/node-XMLHttpRequest/archive/a6b6f2.tar.gz"
-            },
-            "engine.io-parser": {
-              "version": "1.2.1",
-              "dependencies": {
-                "after": {
-                  "version": "0.8.1"
-                },
-                "arraybuffer.slice": {
-                  "version": "0.0.6"
-                },
-                "base64-arraybuffer": {
-                  "version": "0.1.2"
-                },
-                "blob": {
-                  "version": "0.0.2"
-                },
-                "has-binary": {
-                  "version": "0.1.5",
-                  "dependencies": {
-                    "isarray": {
-                      "version": "0.0.1"
-                    }
-                  }
-                },
-                "utf8": {
-                  "version": "2.0.0"
-                }
-              }
-            },
-            "debug": {
-              "version": "1.0.4",
-              "dependencies": {
-                "ms": {
-                  "version": "0.6.2"
-                }
-              }
-            },
-            "parseuri": {
-              "version": "0.0.4",
-              "dependencies": {
-                "better-assert": {
-                  "version": "1.0.2",
-                  "dependencies": {
-                    "callsite": {
-                      "version": "1.0.0"
-                    }
-                  }
-                }
-              }
-            },
-            "parsejson": {
-              "version": "0.0.1",
-              "dependencies": {
-                "better-assert": {
-                  "version": "1.0.2",
-                  "dependencies": {
-                    "callsite": {
-                      "version": "1.0.0"
-                    }
-                  }
-                }
-              }
-            },
-            "parseqs": {
-              "version": "0.0.2",
-              "dependencies": {
-                "better-assert": {
-                  "version": "1.0.2",
-                  "dependencies": {
-                    "callsite": {
-                      "version": "1.0.0"
-                    }
-                  }
-                }
-              }
-            },
-            "component-inherit": {
-              "version": "0.0.3"
             }
           }
         },
-        "component-bind": {
-          "version": "1.0.0"
-        },
-        "component-emitter": {
-          "version": "1.1.2"
-        },
-        "object-component": {
+        "promisecallback": {
           "version": "0.0.3"
         },
-        "socket.io-parser": {
-          "version": "2.2.4",
+        "reconnect-ws": {
+          "version": "https://github.com/tmeasday/reconnect-ws/tarball/master",
           "dependencies": {
-            "json3": {
-              "version": "3.2.6"
-            },
-            "isarray": {
-              "version": "0.0.1"
-            },
-            "benchmark": {
-              "version": "1.0.0"
-            }
-          }
-        },
-        "has-binary": {
-          "version": "0.1.6",
-          "dependencies": {
-            "isarray": {
-              "version": "0.0.1"
-            }
-          }
-        },
-        "indexof": {
-          "version": "0.0.1"
-        },
-        "parseuri": {
-          "version": "0.0.2",
-          "dependencies": {
-            "better-assert": {
-              "version": "1.0.2",
+            "reconnect-core": {
+              "version": "https://github.com/KurentoForks/reconnect-core/tarball/master",
               "dependencies": {
-                "callsite": {
-                  "version": "1.0.0"
+                "backoff": {
+                  "version": "2.3.0"
+                }
+              }
+            },
+            "websocket-stream": {
+              "version": "0.5.1",
+              "dependencies": {
+                "isbuffer": {
+                  "version": "0.0.0"
+                },
+                "ws": {
+                  "version": "0.4.32",
+                  "dependencies": {
+                    "commander": {
+                      "version": "2.1.0"
+                    },
+                    "nan": {
+                      "version": "1.0.0"
+                    },
+                    "tinycolor": {
+                      "version": "0.0.1"
+                    },
+                    "options": {
+                      "version": "0.0.6"
+                    }
+                  }
+                },
+                "through": {
+                  "version": "2.3.8"
                 }
               }
             }
           }
-        },
-        "to-array": {
-          "version": "0.1.3"
-        },
-        "backo2": {
-          "version": "1.0.2"
         }
       }
     }

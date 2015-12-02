@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Npm.depends({
-  'kurento-client' : '5.1.0',
+  'kurento-client' : 'https://github.com/tmeasday/kurento-client-js/tarball/33e3b60f48b376a514add9266192294ec9fef101',
   // 'socket.io-client' : '1.3.5'
 });
 
